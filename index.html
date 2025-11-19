@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap javascript link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .carousel-offset {
+        margin-top: 90px; /* adjust for mobile and desktop */
+      }
+
+      @media (max-width: 768px) {
+        .carousel-offset {
+          margin-top: 110px; /* extra space on small screens */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-light shadow p-3 bg-body rounded fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://img.icons8.com/?size=100&id=pB52ww0LIf3q&format=png&color=000000"
+            alt=""
+            width="50"
+            height="50"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#products"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#support"
+                >Support</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#aboutus"
+                >About Us</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel carousel-offset"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <h4 class="text-center bg-light text-black p-3 my-5 mt-1" id="home">
+        Welcome to Our Store
+      </h4>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_t.png"
+            class="d-block mx-auto img-fluid"
+            style="max-width: 600px; height: auto"
+          />
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_t.png"
+            class="d-block mx-auto img-fluid"
+            style="max-width: 600px; height: auto"
+          />
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_t.png"
+            class="d-block mx-auto img-fluid"
+            style="max-width: 600px; height: auto"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h1 class="text-center bg-light text-black p-3 my-5 mt-4" id="products">
+        Our Products
+      </h1>
+    </div>
+    <div class="container" id="products">
+      <div class="row">
+        <!-- Product cards will go here -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card m-2">
+            <img
+              src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_t.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">GentleMan</h5>
+              <p class="card-text">My picture</p>
+              <a href="#" class="btn btn-primary">Contact Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card m-2">
+            <img
+              src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_t.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">GentleMan</h5>
+              <p class="card-text">My picture</p>
+              <a href="#" class="btn btn-primary">Contact Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card m-2">
+            <img
+              src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_t.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">GentleMan</h5>
+              <p class="card-text">My picture</p>
+              <a href="#" class="btn btn-primary">Contact Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card m-2">
+            <img
+              src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_t.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">GentleMan</h5>
+              <p class="card-text">My picture</p>
+              <a href="#" class="btn btn-primary">Contact Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card m-2">
+            <img
+              src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_t.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">GentleMan</h5>
+              <p class="card-text">My picture</p>
+              <a href="#" class="btn btn-primary">Contact Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
