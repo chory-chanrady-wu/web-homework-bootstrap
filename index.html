@@ -232,7 +232,7 @@
                 type="button"
                 class="btn btn-primary"
                 data-bs-toggle="modal"
-                data-bs-target="#moredetailsModal"
+                data-bs-target="#pcxdetailsModal"
               >
                 More Details
               </button>
@@ -261,7 +261,7 @@
                 type="button"
                 class="btn btn-primary"
                 data-bs-toggle="modal"
-                data-bs-target="#moredetailsModal"
+                data-bs-target="#beatdetailsModal"
               >
                 More Details
               </button>
@@ -290,7 +290,7 @@
                 type="button"
                 class="btn btn-primary"
                 data-bs-toggle="modal"
-                data-bs-target="#moredetailsModal"
+                data-bs-target="#ScoopyclubdetailsModal"
               >
                 More Details
               </button>
@@ -319,7 +319,7 @@
                 type="button"
                 class="btn btn-primary"
                 data-bs-toggle="modal"
-                data-bs-target="#moredetailsModal"
+                data-bs-target="#prestigedetailsModal"
               >
                 More Details
               </button>
@@ -348,7 +348,7 @@
                 type="button"
                 class="btn btn-primary"
                 data-bs-toggle="modal"
-                data-bs-target="#moredetailsModal"
+                data-bs-target="#giornodetailsModal"
               >
                 More Details
               </button>
@@ -377,7 +377,7 @@
                 type="button"
                 class="btn btn-primary"
                 data-bs-toggle="modal"
-                data-bs-target="#moredetailsModal"
+                data-bs-target="#Click160detailsModal"
               >
                 More Details
               </button>
@@ -406,7 +406,7 @@
                 type="button"
                 class="btn btn-primary"
                 data-bs-toggle="modal"
-                data-bs-target="#moredetailsModal"
+                data-bs-target="#ADV160detailsModal"
               >
                 More Details
               </button>
@@ -435,7 +435,7 @@
                 type="button"
                 class="btn btn-primary"
                 data-bs-toggle="modal"
-                data-bs-target="#moredetailsModal"
+                data-bs-target="#PCX160detailsModal"
               >
                 More Details
               </button>
@@ -500,10 +500,10 @@
         </div>
       </div>
     </div>
-    <!-- Modal More Details -->
+    <!-- Modal More Details beat -->
     <div
       class="modal fade"
-      id="moredetailsModal"
+      id="beatdetailsModal"
       data-bs-backdrop="static"
       data-bs-keyboard="false"
       tabindex="-1"
@@ -523,9 +523,66 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
-            <img src="" alt="">
+
+          <div class="modal-body" style="width: 500px">
+            <div>
+              <div class="main-image active">
+                <img
+                  src="/bootstrap-project/assets/images/Sporty-Blue.png"
+                  class="card-img-top"
+                  alt="honda beat"
+                  id="mainImageBeat"
+                />
+              </div>
+              <div class="sub-image col-6 d-flex mt-3" style="cursor: pointer">
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Sporty-Blue.png"
+                    class="card-img-top"
+                    alt="honda beat"
+                    onclick="changeImageBeat(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Trendy-White.png"
+                    class="card-img-top"
+                    alt="honda beat"
+                    onclick="changeImageBeat(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Hyper-Black.png"
+                    class="card-img-top"
+                    alt="honda beat"
+                    onclick="changeImageBeat(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Energetic-Red.png"
+                    class="card-img-top"
+                    alt="honda beat"
+                    onclick="changeImageBeat(this.src)"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="details mt-3">
+              <h5>Honda Beat</h5>
+              <strong>Price: $2500.00</strong>
+              <p>
+                Engine System: 4-Stroke / Single Cylinder / OHC / Fan Cool Bore
+                and Stroke: 47.000 mm x 63.121 mm Displacement: 109.51cc Fuel
+                System: Programed Fuel Injection (PGM-Fi) Ignition System: Full
+                Transisterized Final Drive Type: Belt Drive Clutch System:
+                Automatic Centrifugal Clutch Dry Type Starter System: Electric
+                Starter Compression Ratio: 10.0 : 1
+              </p>
+            </div>
           </div>
+
           <div class="modal-footer">
             <button
               type="button"
@@ -533,6 +590,742 @@
               data-bs-dismiss="modal"
             >
               Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              data-bs-toggle="modal"
+              data-bs-target="#addtocardModal"
+            >
+              Add to Card
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal More Details PCX -->
+    <div
+      class="modal fade"
+      id="pcxdetailsModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="addtocardModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="addtocardModalLabel">
+              More Details
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body" style="width: 500px">
+            <div>
+              <div class="main-image active">
+                <img
+                  src="/bootstrap-project/assets/images/Lifestyle-Grey.png"
+                  class="card-img-top"
+                  alt="honda pcx"
+                  id="mainImagePCX"
+                />
+              </div>
+              <div class="sub-image col-6 d-flex mt-3" style="cursor: pointer">
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Lifestyle-Grey.png"
+                    class="card-img-top"
+                    alt="honda pcx"
+                    onclick="changeImagePCX(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Shinning-Black.png"
+                    class="card-img-top"
+                    alt="honda pcx"
+                    onclick="changeImagePCX(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Glamourous-White.png"
+                    class="card-img-top"
+                    alt="honda pcx"
+                    onclick="changeImagePCX(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Coolest-Blue.png"
+                    class="card-img-top"
+                    alt="honda pcx"
+                    onclick="changeImagePCX(this.src)"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="details mt-3">
+              <h5>Honda PCX</h5>
+              <strong>Price: $4000.00</strong>
+              <p>
+                Engine System: 4-Stroke / Single Cylinder / OHC / Fan Cool Bore
+                and Stroke: 47.000 mm x 63.121 mm Displacement: 109.51cc Fuel
+                System: Programed Fuel Injection (PGM-Fi) Ignition System: Full
+                Transisterized Final Drive Type: Belt Drive Clutch System:
+                Automatic Centrifugal Clutch Dry Type Starter System: Electric
+                Starter Compression Ratio: 10.0 : 1
+              </p>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              data-bs-toggle="modal"
+              data-bs-target="#addtocardModal"
+            >
+              Add to Card
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal More Details Scoopy Club -->
+    <div
+      class="modal fade"
+      id="ScoopyclubdetailsModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="addtocardModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="addtocardModalLabel">
+              More Details
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body" style="width: 500px">
+            <div>
+              <div class="main-image active">
+                <img
+                  src="/bootstrap-project/assets/images/Honda_Scoopyclub-Red.png"
+                  class="card-img-top"
+                  alt="honda scoopy club"
+                  id="mainImageScoopyClub"
+                />
+              </div>
+              <div class="sub-image col-6 d-flex mt-3" style="cursor: pointer">
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_Scoopyclub-Red.png"
+                    class="card-img-top"
+                    alt="honda scoopy club"
+                    onclick="changeImageScoopyClub(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_Scoopyclub-White.png"
+                    class="card-img-top"
+                    alt="honda scoopy club"
+                    onclick="changeImageScoopyClub(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_Scoopyclub-Blue.png"
+                    class="card-img-top"
+                    alt="honda beat"
+                    onclick="changeImageScoopyClub(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_Scoopyclub-Black.png"
+                    class="card-img-top"
+                    alt="honda scoopy club"
+                    onclick="changeImageScoopyClub(this.src)"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="details mt-3">
+              <h5>Honda Scoopy Club</h5>
+              <strong>Price: $2000.00</strong>
+              <p>
+                Engine System: 4-Stroke / Single Cylinder / OHC / Fan Cool Bore
+                and Stroke: 47.000 mm x 63.121 mm Displacement: 109.51cc Fuel
+                System: Programed Fuel Injection (PGM-Fi) Ignition System: Full
+                Transisterized Final Drive Type: Belt Drive Clutch System:
+                Automatic Centrifugal Clutch Dry Type Starter System: Electric
+                Starter Compression Ratio: 10.0 : 1
+              </p>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              data-bs-toggle="modal"
+              data-bs-target="#addtocardModal"
+            >
+              Add to Card
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal More Details Honda Prestige -->
+    <div
+      class="modal fade"
+      id="prestigedetailsModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="addtocardModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="addtocardModalLabel">
+              More Details
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body" style="width: 500px">
+            <div>
+              <div class="main-image">
+                <img
+                  src="/bootstrap-project/assets/images/Honda_Prestige-White.png"
+                  class="card-img-top"
+                  alt="Honda Prestige"
+                  id="mainImageHondaPrestige"
+                />
+              </div>
+              <div class="sub-image col-6 d-flex mt-3" style="cursor: pointer">
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_Prestige-White.png"
+                    class="card-img-top"
+                    alt="Honda Prestige"
+                    onclick="changeImageHondaPrestige(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_Prestige-Black.png"
+                    class="card-img-top"
+                    alt="Honda Prestige"
+                    onclick="changeImageHondaPrestige(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_Prestige-Red.png"
+                    class="card-img-top"
+                    alt="Honda Prestige"
+                    onclick="changeImageHondaPrestige(this.src)"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="details mt-3">
+              <h5>Honda Prestige</h5>
+              <strong>Price: $3000.00</strong>
+              <p>
+                Engine System: 4-Stroke / Single Cylinder / OHC / Fan Cool Bore
+                and Stroke: 47.000 mm x 63.121 mm Displacement: 109.51cc Fuel
+                System: Programed Fuel Injection (PGM-Fi) Ignition System: Full
+                Transisterized Final Drive Type: Belt Drive Clutch System:
+                Automatic Centrifugal Clutch Dry Type Starter System: Electric
+                Starter Compression Ratio: 10.0 : 1
+              </p>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              data-bs-toggle="modal"
+              data-bs-target="#addtocardModal"
+            >
+              Add to Card
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal More Details giorno -->
+    <div
+      class="modal fade"
+      id="giornodetailsModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="addtocardModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="addtocardModalLabel">
+              More Details
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body" style="width: 500px">
+            <div>
+              <div class="main-image">
+                <img
+                  src="/bootstrap-project/assets/images/Honda_Giorno-Gray.png"
+                  class="card-img-top"
+                  alt="honda giorno"
+                  id="mainImageGiorno"
+                />
+              </div>
+              <div class="sub-image col-6 d-flex mt-3" style="cursor: pointer">
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_Giorno-Gray.png"
+                    class="card-img-top"
+                    alt="honda giorno"
+                    onclick="changeImageGiorno(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_Giorno-Blue.png"
+                    class="card-img-top"
+                    alt="honda giorno"
+                    onclick="changeImageGiorno(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_Giorno-Orange.png"
+                    class="card-img-top"
+                    alt="honda giorno"
+                    onclick="changeImageGiorno(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_Giorno-White.png"
+                    class="card-img-top"
+                    alt="honda giorno"
+                    onclick="changeImageGiorno(this.src)"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="details mt-3">
+              <h5>Honda Giorno</h5>
+              <strong>Price: $4000.00</strong>
+              <p>
+                Engine System: 4-Stroke / Single Cylinder / OHC / Fan Cool Bore
+                and Stroke: 47.000 mm x 63.121 mm Displacement: 109.51cc Fuel
+                System: Programed Fuel Injection (PGM-Fi) Ignition System: Full
+                Transisterized Final Drive Type: Belt Drive Clutch System:
+                Automatic Centrifugal Clutch Dry Type Starter System: Electric
+                Starter Compression Ratio: 10.0 : 1
+              </p>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              data-bs-toggle="modal"
+              data-bs-target="#addtocardModal"
+            >
+              Add to Card
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal More Details Click160 -->
+    <div
+      class="modal fade"
+      id="Click160detailsModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="addtocardModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="addtocardModalLabel">
+              More Details
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body" style="width: 500px">
+            <div>
+              <div class="main-image">
+                <img
+                  src="/bootstrap-project/assets/images/Honda_Click160-Black.png"
+                  class="card-img-top"
+                  alt="honda click160"
+                  id="mainImageClick160"
+                />
+              </div>
+              <div class="sub-image col-6 d-flex mt-3" style="cursor: pointer">
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_Click160-Black.png"
+                    class="card-img-top"
+                    alt="honda honda-click160"
+                    onclick="changeImageClick160(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_Click160-Gray.png"
+                    class="card-img-top"
+                    alt="honda honda-click160"
+                    onclick="changeImageClick160(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_Click160-Red.png"
+                    class="card-img-top"
+                    alt="honda honda-click160"
+                    onclick="changeImageClick160(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_Click160-White.png"
+                    class="card-img-top"
+                    alt="honda honda-click160"
+                    onclick="changeImageClick160(this.src)"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="details mt-3">
+              <h5>Honda Click 160</h5>
+              <strong>Price: $4500.00</strong>
+              <p>
+                Engine System: 4-Stroke / Single Cylinder / OHC / Fan Cool Bore
+                and Stroke: 47.000 mm x 63.121 mm Displacement: 109.51cc Fuel
+                System: Programed Fuel Injection (PGM-Fi) Ignition System: Full
+                Transisterized Final Drive Type: Belt Drive Clutch System:
+                Automatic Centrifugal Clutch Dry Type Starter System: Electric
+                Starter Compression Ratio: 10.0 : 1
+              </p>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              data-bs-toggle="modal"
+              data-bs-target="#addtocardModal"
+            >
+              Add to Card
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal More Details ADV160 -->
+    <div
+      class="modal fade"
+      id="ADV160detailsModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="addtocardModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="addtocardModalLabel">
+              More Details
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body" style="width: 500px">
+            <div>
+              <div class="main-image">
+                <img
+                  src="/bootstrap-project/assets/images/Honda_ADV160-Green.png"
+                  class="card-img-top"
+                  alt="honda adv160"
+                  id="mainImageADV160"
+                />
+              </div>
+              <div class="sub-image col-6 d-flex mt-3" style="cursor: pointer">
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_ADV160-Green.png"
+                    class="card-img-top"
+                    alt="honda honda-adv160"
+                    onclick="changeImageADV160(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_ADV160-Black.png"
+                    class="card-img-top"
+                    alt="honda honda-adv160"
+                    onclick="changeImageADV160(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_ADV160-Gray.png"
+                    class="card-img-top"
+                    alt="honda honda-adv160"
+                    onclick="changeImageADV160(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_ADV160-Red.png"
+                    class="card-img-top"
+                    alt="honda honda-adv160"
+                    onclick="changeImageADV160(this.src)"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="details mt-3">
+              <h5>Honda ADV160</h5>
+              <strong>Price: $6000.00</strong>
+              <p>
+                Engine System: 4-Stroke / Single Cylinder / OHC / Fan Cool Bore
+                and Stroke: 47.000 mm x 63.121 mm Displacement: 109.51cc Fuel
+                System: Programed Fuel Injection (PGM-Fi) Ignition System: Full
+                Transisterized Final Drive Type: Belt Drive Clutch System:
+                Automatic Centrifugal Clutch Dry Type Starter System: Electric
+                Starter Compression Ratio: 10.0 : 1
+              </p>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              data-bs-toggle="modal"
+              data-bs-target="#addtocardModal"
+            >
+              Add to Card
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal More Details PCX 160 -->
+    <div
+      class="modal fade"
+      id="PCX160detailsModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="addtocardModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="addtocardModalLabel">
+              More Details
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body" style="width: 500px">
+            <div>
+              <div class="main-image">
+                <img
+                  src="/bootstrap-project/assets/images/Honda_PCX-Blue.png"
+                  class="card-img-top"
+                  alt="honda pcx160"
+                  id="mainImagePCX160"
+                />
+              </div>
+              <div class="sub-image col-6 d-flex mt-3" style="cursor: pointer">
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_PCX-Blue.png"
+                    class="card-img-top"
+                    alt="honda honda-pcx160"
+                    onclick="changeImagePCX160(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_PCX-Black.png"
+                    class="card-img-top"
+                    alt="honda honda-pcx160"
+                    onclick="changeImagePCX160(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_PCX-Red.png"
+                    class="card-img-top"
+                    alt="honda honda-pcx160"
+                    onclick="changeImagePCX160(this.src)"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/bootstrap-project/assets/images/Honda_PCX-White.png"
+                    class="card-img-top"
+                    alt="honda honda-pcx160"
+                    onclick="changeImagePCX160(this.src)"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="details mt-3">
+              <h5>Honda PCX160</h5>
+              <strong>Price: $5000.00</strong>
+              <p>
+                Engine System: 4-Stroke / Single Cylinder / OHC / Fan Cool Bore
+                and Stroke: 47.000 mm x 63.121 mm Displacement: 109.51cc Fuel
+                System: Programed Fuel Injection (PGM-Fi) Ignition System: Full
+                Transisterized Final Drive Type: Belt Drive Clutch System:
+                Automatic Centrifugal Clutch Dry Type Starter System: Electric
+                Starter Compression Ratio: 10.0 : 1
+              </p>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              data-bs-toggle="modal"
+              data-bs-target="#addtocardModal"
+            >
+              Add to Card
             </button>
           </div>
         </div>
@@ -675,5 +1468,32 @@
         <a class="text-dark" href="#">OurStore.com</a>
       </div>
     </footer>
+
+    <script>
+      function changeImageBeat(imageUrl) {
+        document.getElementById("mainImageBeat").src = imageUrl;
+      }
+      function changeImagePCX(imageUrl) {
+        document.getElementById("mainImagePCX").src = imageUrl;
+      }
+      function changeImageScoopyClub(imageUrl) {
+        document.getElementById("mainImageScoopyClub").src = imageUrl;
+      }
+      function changeImageHondaPrestige(imageUrl) {
+        document.getElementById("mainImageHondaPrestige").src = imageUrl;
+      }
+      function changeImageGiorno(imageUrl) {
+        document.getElementById("mainImageGiorno").src = imageUrl;
+      }
+      function changeImageClick160(imageUrl) {
+        document.getElementById("mainImageClick160").src = imageUrl;
+      }
+      function changeImageADV160(imageUrl) {
+        document.getElementById("mainImageADV160").src = imageUrl;
+      }
+      function changeImagePCX160(imageUrl) {
+        document.getElementById("mainImagePCX160").src = imageUrl;
+      }
+    </script>
   </body>
 </html>
